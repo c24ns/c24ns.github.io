@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    #picture {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+
+    }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Some randomly "famous" dalton grads</h1>
+        <div id="picture"></div>
+        <script type="text/javascript">
+        var colors = ["blue", "orange", "magenta", "pink", "yellow", "lightgreen", "red"];
+
+        var box = document.getElementById('picture');
+
+
+
+        box.addEventListener("click", function() {
+            var random = Math.floor(7*Math.random());
+
+            console.log(colors[random])
+
+            box.style.backgroundColor = colors[random];
+        })
+        </script>
+    </center>
+</body>
+
+</html>

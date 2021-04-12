@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    #picture{
+        margin:25px;
+        background-color:navy;
+        width: 125px;
+        height: 125px;
+        border: 2px solid black;
+    }
+     #picture1{
+        margin:25px;
+        position: relative;
+        background-color:navy;
+        width: 125px;
+        height: 125px;
+        border: 2px solid black;
+    }
+    #picture2{
+        margin:25px;
+        position: relative;
+        background-color:navy;
+        width: 125px;
+        height: 125px;
+        border: 2px solid black;
+    }
+    #picture3{
+        margin:25px;
+        position: relative;
+        background-color:navy;
+        width: 125px;
+        height: 125px;
+        border: 2px solid black;
+    }
+    </style>
+</head>
+
+<body>
+
+     <div id="picture"></div>
+     <div id="picture1"></div>
+     <div id="picture2"></div>
+     <div id="picture3"></div>
+
+
+        <script type="text/javascript">
+        var colors =["red", "blue", "green", "yellow","orange", "purple", "pink", "navy", "coral"];
+
+        var box = document.getElementById('picture');
+
+        box.addEventListener("click", function() {
+            var random = Math.floor(9*Math.random());
+
+            console.log(colors[random])
+
+            box.style.backgroundColor = colors[random]; })
+
+        var box1 = document.getElementById('picture1');
+
+        box1.addEventListener("click", function() {
+            var random = Math.floor(9*Math.random());
+
+            console.log(colors[random])
+
+            box1.style.backgroundColor = colors[random]; })
+
+         var box2 = document.getElementById('picture2');
+
+        box2.addEventListener("click", function() {
+            var random = Math.floor(9*Math.random());
+
+            console.log(colors[random])
+
+            box2.style.backgroundColor = colors[random]; })
+
+        var box3 = document.getElementById('picture3');
+
+        box3.addEventListener("click", function() {
+            var random = Math.floor(9*Math.random());
+
+            console.log(colors[random])
+
+            box3.style.backgroundColor = colors[random]; })
+
+
+
+    </script>
+</body>
+
+</html>

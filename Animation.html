@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<style type="text/css">
+		
+	#q{
+		width:100px; 
+		height:100px;
+		background-color:orange;
+		animation-name:sun;
+		animation-duration:2s;
+		animation-iteration-count:infinite; 
+	}
+
+	@keyframes sun {
+		
+		0%{
+			border-radius:0%;
+		}
+
+		50%{
+			border-radius:100%;
+			background-color:lightblue;
+		}
+
+		100%{
+			border-radius:0%;
+			background-color:orange;
+		}
+
+
+	}
+
+	</style>
+</head>
+<body>
+
+<div id="q"></div>
+
+</body>
+</html>
