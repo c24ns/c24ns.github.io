@@ -5,36 +5,129 @@
     <title></title>
     <style type="text/css">
     #picture{
+        animation-name: squareone;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        border-radius: 100px;
         margin:25px;
-        background-color:navy;
+        position:relative;
+        background-color:darkgreen;
         width: 125px;
         height: 125px;
         border: 2px solid black;
     }
+    @keyframes squareone{
+        0%{left:0px; 
+            top:0px;}
+        20% {left:200px;
+            top:200px;}
+        40% {left:400px;
+            top:0px;}
+        60% {left:800px;
+            top:100px;}
+        80% {left:950px;
+            top:25px;}
+        100% {left:1300px;
+            top:1000px;}
+        }
      #picture1{
+        animation-name: squaretwo;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        border-radius: 100px;
         margin:25px;
         position: relative;
         background-color:navy;
         width: 125px;
         height: 125px;
         border: 2px solid black;
+    }
+    @keyframes squaretwo{
+        0%{left:0px; 
+            top:0px;}
+        20% {left:200px;
+            top:200px;}
+        40% {left:400px;
+            top:0px;}
+        60% {left:800px;
+            top:100px;}
+        80% {left:950px;
+            top:25px;}
+        100% {left:1300px;
+            top:1000px;}
     }
     #picture2{
+        animation-name: squarethree;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        border-radius: 100px;
         margin:25px;
         position: relative;
-        background-color:navy;
+        background-color:red;
         width: 125px;
         height: 125px;
         border: 2px solid black;
     }
+    @keyframes squarethree{
+        0%{left:0px; 
+            top:0px;}
+        10%{left:50px; 
+            top:-50px;}
+        20% {left:100px;
+            top:200px;}
+        30% {left:250px;
+            top:-100px;}
+        40% {left:400px;
+            top:-50px;}
+        50% {left:500px;
+            top:100px;}
+        60% {left:550px;
+            top:-250px;}
+        70% {left:700px;
+            top:100px;}
+        80% {left:850px;
+            top:-200px;}
+        90% {left:200px;
+            top:-400px;}
+        100% {left:1300px;
+            top:1000px;}
+        }
     #picture3{
+        animation-name: squarefour;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        border-radius: 100px;
         margin:25px;
         position: relative;
-        background-color:navy;
+        background-color:darkorange;
         width: 125px;
         height: 125px;
         border: 2px solid black;
     }
+    @keyframes squarefour{
+        0%{left:0px; 
+            top:0px;}
+        10%{left:200px; 
+            top:-100px;}
+        20% {left:100px;
+            top:50px;}
+        30% {left:200px;
+            top:-450px;}
+        40% {left:800px;
+            top:-30px;}
+        50% {left:500px;
+            top:100px;}
+        60% {left:550px;
+            top:-250px;}
+        70% {left:700px;
+            top:20px;}
+        80% {left:650px;
+            top:25px;}
+        90% {left:1100px;
+            top:-300px;}
+        100% {left:1300px;
+            top:1000px;}
+        }
     </style>
 </head>
 

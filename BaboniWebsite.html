@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+
+    <title></title>
+    <style type="text/css">
+body{overflow-y:hidden;
+}
+#snow{
+background-image: url("snow.gif");
+background-size:cover;
+background-repeat: no-repeat;
+z-index: 3;
+width: 100%;
+height: 100vh;
+position:relative;
+
+
+}
+
+#home{
+color:yellow;
+}   
+#bigdiv{
+        width:100%;
+        background-color:white;
+        height:100%;
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
+        z-index:-1;
+        position:absolute;
+        top:0px;
+        
+
+
+    }
+#mountains{
+    width:100%;
+    height:40vh;
+    top:72vh;
+    left:0px;
+    background-image:url("mountainrangeblack.png");
+    z-index:1;
+    background-repeat:no-repeat;
+    background-size:contain; 
+    position:absolute;
+    animation-name: clearo;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+
+
+}
+#clouds1{
+
+    width:108%;
+    height:40vh;
+    top:20vh;
+    left:0px;
+    background-image:url("clouds.png");
+    z-index:1;
+    background-size:contain; 
+    position:absolute;
+    margin:0px;
+    animation-name: cloudsmove;
+    animation-duration: 60s;
+    animation-iteration-count:infinite;
+
+}
+#words{
+    width:width 300px;
+    height:100px;
+    top:30vh;
+    font-size:50px;
+    left:25%;
+    background-color:none;
+    z-index:1;
+    opacity:0%;
+    background-size:contain; 
+    position:absolute;
+    margin:0px;
+    animation-name: fade;
+    animation-duration: 10s;
+    animation-iteration-count:1;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+
+#clouds2{
+    width:100%;
+    height:40vh;
+    top:20vh;
+    left:0px;
+    background-image:url("clouds.png");
+    z-index:1;
+    background-size:contain; 
+    position:absolute;
+    margin:0px;
+    animation-name: cloudsmovetwo;
+    animation-duration: 60s;
+    animation-iteration-count:infinite; 
+
+
+
+}
+@keyframes cloudsmovetwo {
+
+    0%{ background-image: url(clouds.png); left: -400vh; top: 20vh; }
+    50%{background-image: url(clouds.png);left: -200vh;
+    top: 20vh;}
+    99%{background-image: url(clouds.png);left: 200vh;
+top: 20vh;}
+
+
+}
+
+@keyframes fade{
+    0%{opacity:100%;}
+    100%{opacity:0%;}
+        }
+
+@keyframes cloudsmove{
+    0%{background-image: url(clouds.png);left: -200vh;
+top: 20vh;}
+    99%{background-image: url(clouds.png);left: 200vh;
+top: 20vh;}
+    100%{background-image: url(clouds.png);left: -200vh;
+top: 20vh;}
+        }
+    
+@keyframes clearo{
+        20% {background-image: url(mountainrangeblack.png);}
+        50%{background-image: url("mountainrangenavy.png");}
+        80% {background-image: url(mountainrangepurple.png);}
+        100%  {background-image: url(mountainrangeblack.png);}
+
+
+        }
+    td{
+        text-align: center;
+        font-size:50px;
+       
+        transition: 1s;
+        border: 0px solid black;
+        position:relative;
+        margin: 10px;
+        border-radius:20px;
+
+       
+    }
+
+    td a{
+         color: white ;
+
+
+    }
+
+     td:hover a{
+         color:rgb(61, 61, 61);
+
+
+    }
+
+    td:hover {
+        background-color:rgba(172, 177, 189, 0.5);
+        
+
+   
+        transition: 1s;
+
+    }
+     
+
+    #menu {
+
+        position:absolute;
+        background-color:rgba(62, 80, 109, 0.5);
+        border-radius:20px;
+        width: 100%;
+        height: 200px;
+        z-index: 4;
+        top:0%;
+        font-family: 'Dosis', sans-serif;
+
+
+    }
+
+
+
+    a{
+    	text-decoration: none;
+    }
+    </style>
+</head>
+
+<body>
+<div id="snow"></div>
+<div id="bigdiv"></div>
+<div id="mountains"></div> 
+<div id="clouds1"  ></div>
+<div id="words"  >Click to customize your background!</div>
+<div id="clouds2"  ></div>
+
+
+
+
+    <table id="menu">
+        <tr>
+            <td><a href="about.html"><div><u>About</u></div></td></a>
+            <td><a href="projects.html"><div><u>Projects</u></div></td></a>
+            <td><a href="journal.html"><div><u>Journal</u></div></td></a>
+            <td><a id = "home" href="index.html"><div><u>Home</u></div></td></a>
+<u>
+        </tr>
+
+       
+    </table>
+
+<script type="text/javascript">
+
+    
+     var bigdiv = document.getElementById('bigdiv');
+
+       bigdiv.addEventListener('click', function(){
+         
+
+
+bigdiv.style.backgroundColor = 'rgb('+ Math.round(Math.random() * 255)+ "," + Math.round(Math.random() * 255) + "," + Math.round(Math.random() * 255) + ')';
+
+         
+
+
+            });
+
+var menu = document.getElementById('menu');
+
+       menu.addEventListener('click', function(){
+         
+
+
+bigdiv.style.backgroundColor = 'rgb('+ Math.round(Math.random() * 255)+ "," + Math.round(Math.random() * 255) + "," + Math.round(Math.random() * 255) + ')';
+
+    });
+
+       var snow = document.getElementById('snow');
+
+       snow.addEventListener('click', function(){
+         
+
+
+bigdiv.style.backgroundColor = 'rgb('+ Math.round(Math.random() * 255)+ "," + Math.round(Math.random() * 255) + "," + Math.round(Math.random() * 255) + ')';
+
+         
+
+            });
+
+
+
+</script>
+</body>
+</html>
