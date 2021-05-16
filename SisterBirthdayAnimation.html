@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+	.balloon{
+		width: 200px;
+		height: 140px;
+		background-image:url(http://assets.stickpng.com/images/580b585b2edbce24c47b2762.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		display: inline-block;
+		margin-left: 5px;
+		}
+	#title{
+		width:1200px;
+		height:100px;
+		background-color: navy;
+		text-align: center;
+		text-decoration: none;
+		color: white;
+		font-size: 40px;
+		margin-left: 1px;
+		margin-right: 1px;}
+
+	#from{
+		width:700px;
+		height:50px;
+		background-color: white;
+		text-align: left;
+		text-decoration: none;
+		color: darkgrey;
+		font-size: 30px;
+		margin-left: 375px;
+		margin-right: 1px;}
+	#writing{
+		width:1000px;
+		height:40px;
+		background-color: white;
+		background-position: center;
+		text-align: right;
+		text-decoration: none;
+		color: darkgrey;
+		font-size: 30px;
+		margin-left: 100px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="title"> Happy 10th Birthday Ana</div>
+	<div id="writing"> You are an awesome sister and I hope you have the best birthday! Love you! </div>
+	<div id="from"> With too much love, Your Big Brother Nate</div>
+	
+</body>
+<script type="text/javascript">
+	
+function makeBalloon (input){
+
+	var balloon = document.createElement('div');
+	balloon.classList.add('balloon')
+	document.body.appendChild(balloon)
+
+}
+ setInterval(makeBalloon, 75) 
+
+for(var i=0; i<1; i = i+1) { makeBalloon(
+	i)}
+
+</script>
+</html>

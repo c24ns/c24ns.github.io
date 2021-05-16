@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<title>Chess King Clock</title>
+
+	<style type="text/css">
+	.king{
+
+		width: 200px;
+		height: 200px;
+		background-image:url(https://lh3.googleusercontent.com/proxy/DRWY_IQalJ7_Hdt_iQYlh3khIpVIVCIpJxegdO6_OXToCdI1JBbtit0z85SX0NgB5dSmpAnDvF2Ba5EZLLAYjq9DFKo9aOJj4na6eLBux0-mjlRW3onoIOBIhnFUP3m1clErQEapVhYtaAjtRualL9lLHQ_H36JNCw);
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin: 5px;
+		display: inline-block;
+		}
+		#title{width:1260px;
+	height:100px;
+	background-color: darkgrey;
+	position: relative;
+		text-align: center;
+		text-decoration: none;
+		color: black;
+		font-size: 50px;
+	}
+
+
+	</style>
+</head>
+<body>
+	<div id="title"> Chess King Clock</div>
+</body>
+<script type="text/javascript">
+	
+function makeKing (input){
+
+	var king = document.createElement('div');
+	king.classList.add('king')
+	document.body.appendChild(king)
+
+}
+ setInterval(makeKing, 1000) 
+
+for(var i=0; i<1; i = i+1) { makeKing(
+	i)}
+
+</script>
+</html>
